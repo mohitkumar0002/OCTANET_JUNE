@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tour guide</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      integrity="sha512-L7MWcK7FNPcwNqnLdZq86lTHYLdQqZaz5YcAgE+5cnGmlw8JT03QB2+oxL100UeB6RlzZLUxCGSS4/++mNZdxw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div id="menu-bar" class="fas fa-bars"></div>
+
+      <a href="#" class="logo"><span>T</span>ravel</a>
+
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#book">Book</a>
+        <a href="#packages">Packages</a>
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#review">Review</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+        <i class="fas fa-user" id="login-btn"></i>
+      </div>
+
+      <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="search here...." />
+        <label for="search-bar" class="fas fa-search"></label>
+      </form>
+    </header>
+
+    <!-- login form container -->
+    <div class="login-form-container">
+      <i class="fa-solid fa-xmark" id="form-close"></i>
+
+      <form action="">
+        <h3>login</h3>
+        <input type="email" class="box" placeholder="enter you email" />
+        <input type="password" class="box" placeholder="enter your pasword" />
+        <input type="submit" value="login" class="btn" />
+        <input type="checkbox" id="remember" />
+        <label for="remember"> remember me</label>
+        <p>forgot password?<a href="#">click here</a></p>
+        <p>don't have an account? <a href="#">register now</a></p>
+      </form>
+    </div>
+
+    <!-- home secttion starts -->
+    <section class="home" id="home">
+      <div class="content">
+        <h3>Live your travel dreams</h3>
+        <p>The world is a book and those who do not travel read only one page</p>
+        <a href="#" class="btn"> discover more</a>
+      </div>
+
+      <div class="controls">
+        <span class="vid-btn active" data-src="images/vid1.mp4"></span>
+        <span class="vid-btn" data-src="images/vid2.mp4"></span>
+        <span class="vid-btn" data-src="images/vid3.mp4"></span>
+        <span class="vid-btn" data-src="images/vid4.mp4"></span>
+        <span class="vid-btn" data-src="images/vid5.mp4"></span>
+      </div>
+
+      <div class="video-container">
+        <video
+          src="images/vid1.mp4"
+          id="video-slider"
+          loop
+          autoplay
+          muted
+        ></video>
+      </div>
+    </section>
+
+    <!-- home secttion ends-->
+
+    <!-- book section starts -->
+    <section class="book" id="book">
+      <h1 class="heading">
+        <span>b</span>
+        <span>o</span>
+        <span>o</span>
+        <span>k</span>
+        <span class="space"></span>
+        <span>n</span>
+        <span>o</span>
+        <span>w</span>
+      </h1>
+
+      <div class="row">
+        <div class="image">
+          <img src="images/book1-img.jpg" alt="" />
+        </div>
+        <form action="">
+          <div class="inputbox">
+            <h3>where to</h3>
+            <input type="text" placeholder="place name" />
+          </div>
+          <div class="inputbox">
+            <h3>how many</h3>
+            <input type="number" placeholder="number of guests" />
+          </div>
+          <div class="inputbox">
+            <h3>arrivals</h3>
+            <input type="date" />
+          </div>
+          <div class="inputbox">
+            <h3>leaving</h3>
+            <input type="date" />
+          </div>
+          <input type="button" class="btn" value="book now" />
+        </form>
+      </div>
+    </section>
+
+    <!-- book section ends -->
+    <!-- Packages section starts -->
+    <section class="packages" id="packages">
+      <h1 class="heading">
+        <span>p</span>
+        <span>a</span>
+        <span>c</span>
+        <span>k</span>
+        <span>a</span>
+        <span>g</span>
+        <span>e</span>
+        <span>s</span>
+      </h1>
+      <div class="box-container">
+        <div class="box">
+          <img src="images/p-11.jpg" alt="" />
+          <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i>mumbai</h3>
+            <p>
+              Mumbai (formerly called Bombay) is a densely populated city on
+              India’s west coast. A financial center, it's India's largest city.
+              On the Mumbai Harbour waterfront stands the iconic Gateway of
+              India stone arch, built by the British Raj in 1924.
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="price">$50.00 <span>$120.00</span></div>
+            <a href="#" class="btn">book now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/p-2.jpg" alt="" />
+          <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i>hawaii</h3>
+            <p>
+              Hawaii is a state in the Western United States, about 2,000 miles
+              from the U.S. mainland in the Pacific Ocean. It is the only U.S.
+              state outside North America, the only state that is an
+              archipelago, and the only state in the tropics.
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="price">$70.00 <span>$120.00</span></div>
+            <a href="#" class="btn">book now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/p-3.jpg" alt="" />
+          <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i>GOA</h3>
+            <p>
+              Goa is a state in western India with coastlines stretching along the Arabian Sea. Goa is also known for its beaches, ranging from popular stretches at Baga and Palolem to those in laid-back fishing villages such as Agonda
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="price">$85.00 <span>$120.00</span></div>
+            <a href="#" class="btn">book now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/p-4.jpg" alt="" />
+          <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i>Rishikesh</h3>
+            <p>
+              Rishikesh is a city in India’s northern state of Uttarakhand, in the Himalayan foothills beside the Ganges River. The river is considered holy, and the city is renowned as a center for studying yoga and meditation. Temples and ashrams (centers for spiritual studies) line the eastern bank around Swarg Ashram, a traffic-free, alcohol-free and vegetarian enclave upstream from Rishikesh town.
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="price">$60.00 <span>$120.00</span></div>
+            <a href="#" class="btn">book now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/p-5.jpeg" alt="" />
+          <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i>tokyo</h3>
+            <p>
+              Tokyo, Japan’s busy capital, mixes the ultramodern and the
+              traditional, from neon-lit skyscrapers to historic temples. The
+              opulent Meiji Shinto Shrine is known for its towering gate and
+              surrounding woods. The Imperial Palace sits amid large public
+              gardens. The city's many museums offer exhibits ranging from
+              classical art (in the Tokyo National Museum) to a reconstructed
+              kabuki theater (in the Edo-Tokyo Museum).
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="price">$100.00 <span>$120.00</span></div>
+            <a href="#" class="btn">book now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/p-6.jpg" alt="" />
+          <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i>uttarakhand</h3>
+            <p>
+              A mystical land of mountains and mythologies, exquisite landscapes and exhilarating adventure,Uttarakhand has something to offer every traveller. Popularly known as Devbhoomi, or the land of gods. While Uttarakhand has several well-known destinations like Nainital, Mussoorie, Corbett National Park and Auli, and pilgrimage sites like Kedarnath, Badrinath, Rishikesh and Haridwar.
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="price">$40.00 <span>$80.00</span></div>
+            <a href="#" class="btn">book now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Packages section ends -->
+    <!-- service section starts -->
+    <section class="services" id="services">
+      <h1 class="heading">
+        <span>s</span>
+        <span>e</span>
+        <span>r</span>
+        <span>v</span>
+        <span>i</span>
+        <span>c</span>
+        <span>e</span>
+        <span>s</span>
+      </h1>
+      <div class="box-container">
+        <div class="box">
+          <i class="fas fa-hotel"></i>
+          <h3>affordable hotels</h3>
+          <p>
+            Choose From a Wide Range of Properties Which Offers! Book Cheap Hotels Online. No reservation costs. Great rates. 24/7 Customer Service. Flight + Hotel. Low Rates. Great Choice. Apartments. Best Price Guarantee.
+          </p>
+        </div>
+
+        <div class="box">
+          <i class="fas fa-utensils"></i>
+          <h3>food and drinks</h3>
+          <p>
+            best quality food and beverages are available, both vegiterranean and non-vegiterranean, seprate food for childrens. Best quality food prepared by the assured chefs with proper hygiene and precautions.
+          </p>
+        </div>
+
+        <div class="box">
+          <i class="fas fa-bullhorn"></i>
+          <h3>safty guide</h3>
+          <p>
+            Your safety is your personal responsibility.
+            Always follow the correct procedures.
+            Never take shortcuts.
+            Take responsibility and clean up if you made a mess.
+            Ensure a clear and easy route to emergency exits and equipment.
+          </p>
+        </div>
+
+        <div class="box">
+          <i class="fas fa-globe-asia"></i>
+          <h3>around the world</h3>
+          <p>
+            Planning an around the world trip can be an overwhelming experience. From figuring out your budget to designing your itinerary to packing your bags, reach there to get some new experience.
+          </p>
+        </div>
+
+        <div class="box">
+          <i class="fas fa-plane"></i>
+          <h3>fastest travel</h3>
+          <p>
+            the fasster the travel the faster you reach to your dream destinations. we assures you the fastest mode of travel possible so that you don't have to losse your time and enjoy more. 
+          </p>
+        </div>
+
+        <div class="box">
+          <i class="fas fa-hiking"></i>
+          <h3>adventures</h3>
+          <p>
+            an exciting or very unusual experience. participation in exciting undertakings or enterprises: the spirit of adventure. different adventrous activities like bunggy, rafting, climbing etc.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- service section starts -->
+    <!-- gallery section starts -->
+    <section class="gallery" id="gallery">
+      <h1 class="heading">
+        <span>g</span>
+        <span>a</span>
+        <span>l</span>
+        <span>l</span>
+        <span>e</span>
+        <span>r</span>
+        <span>y</span>
+      </h1>
+      <div class="box-container">
+        <div class="box">
+          <img src="images/g-1.jpg" alt="" />
+          <div class="content">
+            <h3>amazing places</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
+              repellat?
+            </p>
+            <a href="#" class="btn">see more</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/g-2.jpg" alt="" />
+          <div class="content">
+            <h3>amazing places</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
+              repellat?
+            </p>
+            <a href="#" class="btn">see more</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/g-3.jpg" alt="" />
+          <div class="content">
+            <h3>amazing places</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
+              repellat?
+            </p>
+            <a href="#" class="btn">see more</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/g-4.jpg" alt="" />
+          <div class="content">
+            <h3>amazing places</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
+              repellat?
+            </p>
+            <a href="#" class="btn">see more</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/g-5.jpg" alt="" />
+          <div class="content">
+            <h3>amazing places</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
+              repellat?
+            </p>
+            <a href="#" class="btn">see more</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/g-6.jpg" alt="" />
+          <div class="content">
+            <h3>amazing places</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
+              repellat?
+            </p>
+            <a href="#" class="btn">see more</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/g-7.jpg" alt="" />
+          <div class="content">
+            <h3>amazing places</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
+              repellat?
+            </p>
+            <a href="#" class="btn">see more</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/g-8.jpg" alt="" />
+          <div class="content">
+            <h3>amazing places</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
+              repellat?
+            </p>
+            <a href="#" class="btn">see more</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/g-9.jpg" alt="" />
+          <div class="content">
+            <h3>amazing places</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
+              repellat?
+            </p>
+            <a href="#" class="btn">see more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- gallery section ends -->
+
+    <!-- review section starts -->
+    <section class="review" id="review">
+      <h1 class="heading">
+        <span>r</span>
+        <span>e</span>
+        <span>v</span>
+        <span>i</span>
+        <span>e</span>
+        <span>w</span>
+      </h1>
+      <div class="swiper review-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="box">
+              <img src="images/img-1.jpg" alt="" />
+              <h3>john deo</h3>
+              <p>
+                Easy booking friendly service hassle free definitely would
+                recommend and will book our next holiday with them again.
+              </p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <img src="images/img-2.jpg" alt="" />
+              <h3>Sophie </h3>
+              <p>
+                Great service. Big shout out to Tammy for helping with one of our friends who was distressed and had to leave suddenly due to family death.
+              </p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <img src="images/img-3.jpg" alt="" />
+              <h3>Trevor Kick</h3>
+              <p>
+                Great service- efficient and friendly.Very helpful staff. Easy to contact and resolve any issues. Had a great experience.
+              </p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <img src="images/img-4.jpg" alt="" />
+              <h3>Steven Goding</h3>
+              <p>
+                Easy to deal with and quick reply's if you have any questions. This is the 3rd overseas holiday we have booked through travel online.
+              </p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <img src="images/img-5.jpg" alt="" />
+              <h3>Anna Chammeol</h3>
+              <p>
+                Thankyou, The package provided met all our needs and gave us the opportunity to experience more than we thought we would
+              </p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- reviews section ends -->
+    <!-- contact section -->
+    <section class="contact">
+      <h1 class="heading">
+        <span>c</span>
+        <span>o</span>
+        <span>n</span>
+        <span>t</span>
+        <span>a</span>
+        <span>c</span>
+        <span>t</span>
+      </h1>
+      <div class="row">
+        <div class="image">
+          <img src="images/book-img.jpg" alt="" />
+        </div>
+
+        <form action="">
+          <div class="inputBox">
+            <input type="text" placeholder="name" />
+            <input type="email" placeholder="email" />
+          </div>
+          <div class="inputBox">
+            <input type="number" placeholder="number" />
+            <input type="text" placeholder="subject" />
+          </div>
+          <textarea
+            placeholder="message"
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+          ></textarea>
+          <input type="submit" class="btn" value="send message" />
+        </form>
+      </div>
+    </section>
+
+    <!-- contact ends -->
+    <!-- footer -->
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>about us</h3>
+          <p>
+           Travel with us we makes all youe travel dreams come true. Travel beyond the world and get a new experience and fill your bucket list with us. 
+          </p>
+        </div>
+        <div class="box">
+          <h3>branch locations</h3>
+          <a href="#">india</a>
+          <a href="#">USA</a>
+          <a href="#">sydney</a>
+          <a href="#">Tokyo</a>
+        </div>
+        <div class="box">
+          <h3>quick links</h3>
+          <a href="#home">Home</a>
+          <a href="#book">Book</a>
+          <a href="#packages">Packages</a>
+          <a href="#services">Services</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#review">Review</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="box">
+          <h3>follow us</h3>
+          <a href="#">facebook</a>
+          <a href="#">instagram</a>
+          <a href="#">twitter</a>
+          <a href="#">linkedin</a>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
